@@ -19,6 +19,8 @@ export const StepImgsStyled = styled.div<progress>`
     margin: 0 auto;
     height: 10px;
     width: 100%;
+    background-color: whitesmoke;
+    border-radius: 16px;
   }
   .color-bar {
     width: ${(props) => props.$progress}%;

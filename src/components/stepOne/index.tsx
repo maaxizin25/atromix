@@ -27,8 +27,8 @@ export const StepOneComponent = () => {
 
   return (
     <StepOneStyled action="" onSubmit={submitEvent}>
-      <h2>Please enter your birth date</h2>
-      <p>It will help us to tell your solar sign</p>
+      <h2>Por favor, introduce tu fecha de nacimiento</h2>
+      <p>Nos ayudará a saber tu signo solar.</p>
       <img className="telescope-img" src={telescopeImg} alt="" />
       <div className="select-your-data">
         <select
@@ -37,18 +37,18 @@ export const StepOneComponent = () => {
           id="month"
           onChange={saveDateBirth}
         >
-          <option value={1}>Janeiro</option>
-          <option value={2}>Fevereiro</option>
-          <option value={3}>Março</option>
+          <option value={1}>Enero</option>
+          <option value={2}>Febrero</option>
+          <option value={3}>Marzo</option>
           <option value={4}>Abril</option>
-          <option value={5}>Maio</option>
-          <option value={6}>Junho</option>
-          <option value={7}>Julho</option>
+          <option value={5}>Puede</option>
+          <option value={6}>Junio</option>
+          <option value={7}>Julio</option>
           <option value={8}>Agosto</option>
-          <option value={9}>Setembro</option>
-          <option value={10}>Outubro</option>
-          <option value={11}>Novembro</option>
-          <option value={12}>Dezembro</option>
+          <option value={9}>Septiembre</option>
+          <option value={10}>Octubre</option>
+          <option value={11}>Noviembre</option>
+          <option value={12}>Diciembre</option>
         </select>
         <select defaultValue="1" name="day" id="day" onChange={saveDateBirth}>
           {optionsDays}

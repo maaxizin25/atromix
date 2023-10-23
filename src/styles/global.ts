@@ -11,6 +11,12 @@ padding: 0;
 box-sizing: border-box;
 
 }
+h2 {
+    color: #6656a9;
+}
+p {
+    color: #8c80bf;
+}
 
 button{
 
