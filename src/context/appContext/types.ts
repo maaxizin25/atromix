@@ -19,5 +19,6 @@ export interface iAppContext {
   signo: {
     signo: string;
     message: string;
+    img: string;
   };
 }

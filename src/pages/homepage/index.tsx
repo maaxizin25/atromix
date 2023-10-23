@@ -4,6 +4,7 @@ import { HomePageStyled } from "./style";
 import { StepOneComponent } from "../../components/stepOne";
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
+import { StepTwoComponent } from "../../components/stepTwo";
 
 export const HomePage = () => {
   const { currentStep } = useContext(AppContext);
@@ -13,6 +14,7 @@ export const HomePage = () => {
       <div className="container-form">
         <StepImgsComponents />
         {currentStep === 1 && <StepOneComponent />}
+        {currentStep === 2 && <StepTwoComponent />}
       </div>
     </HomePageStyled>
   );
