@@ -6,6 +6,7 @@ export const HomePageStyled = styled.main`
   background-color: whitesmoke;
   .container-form {
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
     background-color: white;
     border-radius: 0px;
@@ -15,6 +16,7 @@ export const HomePageStyled = styled.main`
     .container-form {
       max-width: 600px;
       border-radius: 16px !important;
+      height: 750px;
     }
   }
 `;
