@@ -47,10 +47,10 @@ export const StepFourComponent = () => {
 
   return (
     <StepFourStyle>
-      <h2>Enter your birth time</h2>
+      <h2>Introduce tu hora de nacimiento</h2>
       <p>
-        It’s important for defining the ascendant, houses, and moon position in
-        your natal chart
+        Es importante para definir el ascendente, las casas y la posición de la
+        luna en tu carta natal
       </p>
       <img src={horaNascimiento} alt="" />
       <form>
@@ -84,12 +84,15 @@ export const StepFourComponent = () => {
             name="fruta"
             value="maca"
           />
-          <label htmlFor="maca">I don't know the exact birth time</label>
+          <label htmlFor="maca">No sé la hora exacta de nacimiento</label>
         </div>
-        {isValidTime && <h2 className="error-hour">Enter your birth time</h2>}
+        {isValidTime && (
+          <h2 className="error-hour">Introduce tu hora de nacimiento</h2>
+        )}
         <p>
-          *If you don't know the exact time of birth, no problem, you will still
-          find plenty of great insights without knowing your exact birth time.
+          *Si no sabes la hora exacta de nacimiento, no hay problema, igual la
+          sabrás Encuentre muchas ideas interesantes sin saber su hora exacta de
+          nacimiento.
         </p>
       </form>
       <ButtonSubmitComponent onClick={submitFormStepFour} />
