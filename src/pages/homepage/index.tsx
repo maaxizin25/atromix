@@ -8,6 +8,7 @@ import { StepTwoComponent } from "../../components/stepTwo";
 import { StepThreeComponent } from "../../components/stepThree";
 import { StepFourComponent } from "../../components/stepFour";
 import { StepFiveComponent } from "../../components/stepFive";
+import { StepSixComponent } from "../../components/stepSix";
 
 export const HomePage = () => {
   const { currentStep } = useContext(AppContext);
@@ -21,6 +22,7 @@ export const HomePage = () => {
         {currentStep === 3 && <StepThreeComponent />}
         {currentStep === 4 && <StepFourComponent />}
         {currentStep === 5 && <StepFiveComponent />}
+        {currentStep === 6 && <StepSixComponent />}
       </div>
     </HomePageStyled>
   );
