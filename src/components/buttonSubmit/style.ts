@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ButtonSubmitStyled = styled.button`
+  position: fixed;
+  z-index: 0;
+  bottom: 40px;
   margin-top: 250px;
   margin-bottom: 20px;
   width: 100%;

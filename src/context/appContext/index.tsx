@@ -28,6 +28,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
       "Los capricornianos suelen ser ambiciosos y se guían únicamente por la mente. Son reservados, fríos e irremediablemente ordenados, por lo que siempre controlan la situación y actúan con criterio, apoyándose en el sentido común. Al mismo tiempo, a los Capricornio les resulta difícil comprender sus propias emociones y las de los demás, lo que puede provocar malentendidos y discrepancias.",
     img: capricornio,
   });
+  const [city, setCity] = useState("Lugar de nacimiento (Ciudad)");
+  const [isInputOpen, setInputOpen] = useState<boolean>(false);
 
   const increamentStep = () => {
     if (currentStep < 6) {
@@ -132,6 +134,16 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const submitEvent = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     getSigno(dateBirth);
+    increamentStep();
+  };
+
+  const insertCity = (e: string) => {
+    setCity(e);
+    setInputOpen(false);
+  };
+
+  const inputOpenModal = () => {
+    setInputOpen(!isInputOpen);
   };
 
   return (
@@ -144,6 +156,10 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         dateBirth,
         submitEvent,
         signo,
+        city,
+        insertCity,
+        isInputOpen,
+        inputOpenModal,
       }}
     >
       {children}

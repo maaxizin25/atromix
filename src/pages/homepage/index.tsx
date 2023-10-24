@@ -5,6 +5,7 @@ import { StepOneComponent } from "../../components/stepOne";
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
 import { StepTwoComponent } from "../../components/stepTwo";
+import { StepThreeComponent } from "../../components/stepThree";
 
 export const HomePage = () => {
   const { currentStep } = useContext(AppContext);
@@ -15,6 +16,7 @@ export const HomePage = () => {
         <StepImgsComponents />
         {currentStep === 1 && <StepOneComponent />}
         {currentStep === 2 && <StepTwoComponent />}
+        {currentStep === 3 && <StepThreeComponent />}
       </div>
     </HomePageStyled>
   );

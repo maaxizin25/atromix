@@ -21,4 +21,8 @@ export interface iAppContext {
     message: string;
     img: string;
   };
+  city: string;
+  insertCity: (e: string) => void;
+  isInputOpen: boolean;
+  inputOpenModal: () => void;
 }

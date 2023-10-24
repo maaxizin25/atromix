@@ -5,7 +5,7 @@ import { StepOneStyled } from "./style";
 import { AppContext } from "../../context/appContext";
 
 export const StepOneComponent = () => {
-  const { saveDateBirth, submitEvent } = useContext(AppContext);
+  const { saveDateBirth, submitEvent, dateBirth } = useContext(AppContext);
 
   const optionsDays = [];
   const optionsYears = [];
@@ -32,7 +32,7 @@ export const StepOneComponent = () => {
       <img className="telescope-img" src={telescopeImg} alt="" />
       <div className="select-your-data">
         <select
-          defaultValue={1}
+          defaultValue={dateBirth.month}
           name="month"
           id="month"
           onChange={saveDateBirth}
@@ -50,14 +50,19 @@ export const StepOneComponent = () => {
           <option value={11}>Noviembre</option>
           <option value={12}>Diciembre</option>
         </select>
-        <select defaultValue="1" name="day" id="day" onChange={saveDateBirth}>
+        <select
+          defaultValue={dateBirth.day}
+          name="day"
+          id="day"
+          onChange={saveDateBirth}
+        >
           {optionsDays}
         </select>
         <select
           name="year"
           id="year"
           onChange={saveDateBirth}
-          defaultValue={1993}
+          defaultValue={dateBirth.year}
         >
           {optionsYears}
         </select>

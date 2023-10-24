@@ -5,6 +5,7 @@ export const HomePageStyled = styled.main`
   width: 100%;
   background-color: whitesmoke;
   .container-form {
+    position: relative;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
