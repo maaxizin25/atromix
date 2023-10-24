@@ -27,4 +27,10 @@ export interface iAppContext {
   inputOpenModal: () => void;
   changeHourBirth: (e: string) => void;
   hourDateBirth: string;
+  selectedGender: string | null;
+  handleChangeGenderSelect: (gender: string) => void;
+  changeName: (name: string) => void;
+  nameUser: string;
+  isInputNameValid: boolean;
+  setIsInputNameValid: (e: boolean) => void;
 }
