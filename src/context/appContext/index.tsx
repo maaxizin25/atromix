@@ -31,6 +31,9 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [city, setCity] = useState("Lugar de nacimiento (Ciudad)");
   const [isInputOpen, setInputOpen] = useState<boolean>(false);
   const [hourDateBirth, setHourDateBirth] = useState("");
+  const [selectedGender, setSelectedGender] = useState<string | null>(null);
+  const [nameUser, setNameUser] = useState<string>("");
+  const [isInputNameValid, setIsInputNameValid] = useState(true);
 
   const increamentStep = () => {
     if (currentStep < 6) {
@@ -150,6 +153,13 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const changeHourBirth = (e: string) => {
     setHourDateBirth(e);
   };
+  const handleChangeGenderSelect = (gender: string) => {
+    setSelectedGender(gender);
+  };
+  const changeName = (name: string) => {
+    setNameUser(name);
+    setIsInputNameValid(true);
+  };
 
   return (
     <AppContext.Provider
@@ -167,6 +177,12 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         inputOpenModal,
         changeHourBirth,
         hourDateBirth,
+        selectedGender,
+        handleChangeGenderSelect,
+        changeName,
+        nameUser,
+        isInputNameValid,
+        setIsInputNameValid,
       }}
     >
       {children}
