@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
 export interface iAppContextProps {
   children: React.ReactNode;
@@ -9,4 +9,22 @@ export interface iAppContext {
   increamentStep: () => void;
   decreamentStep: () => void;
   currentStep: number;
+  saveDateBirth: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  dateBirth: {
+    month: string;
+    day: string;
+    year: string;
+  };
+  submitEvent: (e: FormEvent<HTMLFormElement>) => void;
+  signo: {
+    signo: string;
+    message: string;
+    img: string;
+  };
+  city: string;
+  insertCity: (e: string) => void;
+  isInputOpen: boolean;
+  inputOpenModal: () => void;
+  changeHourBirth: (e: string) => void;
+  hourDateBirth: string;
 }
