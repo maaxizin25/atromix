@@ -25,4 +25,6 @@ export interface iAppContext {
   insertCity: (e: string) => void;
   isInputOpen: boolean;
   inputOpenModal: () => void;
+  changeHourBirth: (e: string) => void;
+  hourDateBirth: string;
 }

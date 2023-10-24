@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
 import { StepTwoComponent } from "../../components/stepTwo";
 import { StepThreeComponent } from "../../components/stepThree";
+import { StepFourComponent } from "../../components/stepFour";
 
 export const HomePage = () => {
   const { currentStep } = useContext(AppContext);
@@ -17,6 +18,7 @@ export const HomePage = () => {
         {currentStep === 1 && <StepOneComponent />}
         {currentStep === 2 && <StepTwoComponent />}
         {currentStep === 3 && <StepThreeComponent />}
+        {currentStep === 4 && <StepFourComponent />}
       </div>
     </HomePageStyled>
   );
