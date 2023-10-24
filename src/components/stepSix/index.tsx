@@ -5,24 +5,27 @@ export const StepSixComponent = () => {
   return (
     <StepSixStyle>
       <div>
-        <h2>We need your email address to send you horoscopes readings.</h2>
+        <h2>
+          Necesitamos tu dirección de correo electrónico para enviarte lecturas
+          de horóscopos.
+        </h2>
         <img src={giftImg} alt="" />
         <p>
-          We will also send you letters{" "}
+          También te enviaremos cartas.{" "}
           <b>
-            with personal recommendations from the Astromix lead astrologer.
+            con recomendaciones personales del astrólogo principal de Astromix.
           </b>
         </p>
         <div className="input-container">
-          <input type="email" placeholder="Email" />
-          <p>You’ll get advice based on your personal information.</p>
+          <input type="email" placeholder="Correo electrónico" />
+          <p>Recibirás consejos basados en tu información personal.</p>
         </div>
         <label>
           <input type="checkbox" />
-          <p>I accept the User Agreement, Privacy Policy</p>
+          <p>Acepto el Acuerdo de Usuario, Política de Privacidad</p>
         </label>
         <div>
-          <p>All your personal data is protected</p>
+          <p>Todos tus datos personales están protegidos</p>
         </div>
       </div>
     </StepSixStyle>
