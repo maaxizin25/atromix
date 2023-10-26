@@ -10,7 +10,6 @@ export const StepSixStyle = styled.div`
     img {
       width: 60px;
     }
-    text-align: center;
     .input-container {
       input {
         width: 100%;

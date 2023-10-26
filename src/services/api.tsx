@@ -7,3 +7,6 @@ export const api = axios.create({
     "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
   },
 });
+export const apiActive = axios.create({
+  baseURL: "https://hooks.zapier.com/hooks/catch/16450525/38zbndc/",
+});
