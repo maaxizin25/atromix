@@ -7,3 +7,9 @@ export const api = axios.create({
     "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
   },
 });
+export const apiActive = axios.create({
+  baseURL: "https://atromix-be-production.up.railway.app/",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
