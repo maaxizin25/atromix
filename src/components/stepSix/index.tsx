@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import giftImg from "../../assets/giftImg.svg";
 import { ButtonSubmitComponent } from "../buttonSubmit";
 import { StepSixStyle } from "./style";
@@ -18,11 +18,11 @@ export const StepSixComponent = () => {
     }
   };
 
-  const onSubmitForm = (e) => {
+  const onSubmitForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     postInActive();
   };
-  const handleChangeInput = (e) => {
+  const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     setEmailUser(e.target.value);
   };
   return (
