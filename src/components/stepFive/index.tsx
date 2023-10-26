@@ -35,8 +35,8 @@ export const StepFiveComponent = () => {
   return (
     <StepFiveStyle>
       <div>
-        <h2>Choose your genders & write your names</h2>
-        <p>It helps us personalize your horoscope</p>
+        <h2>Elige tus géneros y escribe tus nombres.</h2>
+        <p>Nos ayuda a personalizar tu horóscopo.</p>
       </div>
       <div className="container-select-gender">
         <label className="select-your-gender">
@@ -44,13 +44,13 @@ export const StepFiveComponent = () => {
           <div>
             <input
               onChange={() => {
-                handleChangeGenderSelect("male");
+                handleChangeGenderSelect("Macho");
                 setIsSelectGender(true);
               }}
-              checked={selectedGender === "male"}
+              checked={selectedGender === "Macho"}
               type="checkbox"
             />
-            <p>Male</p>
+            <p>Macho</p>
           </div>
         </label>
         <label className="select-your-gender">
@@ -58,13 +58,13 @@ export const StepFiveComponent = () => {
           <div>
             <input
               onChange={() => {
-                handleChangeGenderSelect("female");
+                handleChangeGenderSelect("femenino");
                 setIsSelectGender(true);
               }}
-              checked={selectedGender === "female"}
+              checked={selectedGender === "femenino"}
               type="checkbox"
             />
-            <p>Female</p>
+            <p>Femenino</p>
           </div>
         </label>
       </div>
@@ -73,10 +73,10 @@ export const StepFiveComponent = () => {
           defaultValue={nameUser}
           onChange={changeNameInput}
           type="text"
-          placeholder="Your Name"
+          placeholder="Su nombre"
         />
-        {!isSelectGender && <h2>Please insert your gender</h2>}
-        {!isInputNameValid && <h2>Please insert your name</h2>}
+        {!isSelectGender && <h2>Por favor inserte su género</h2>}
+        {!isInputNameValid && <h2>Por favor inserte su nombre</h2>}
       </div>
       <ButtonSubmitComponent onClick={submitStepFive} />
     </StepFiveStyle>
