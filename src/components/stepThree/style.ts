@@ -6,6 +6,13 @@ export const StepThreeStyled = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  .container-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   form {
     width: 270px;
   }
@@ -13,25 +20,37 @@ export const StepThreeStyled = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: 0;
     color: black;
     border: 1px solid #c7b4ff;
     border-radius: 16px;
+    background-color: #f9efff;
   }
   input {
     margin-top: -10px;
     height: 50px;
     outline: none;
+    background-color: #f9efff;
   }
   .container-input-search-city {
     display: flex;
     flex-direction: column;
+    background-color: #f9efff;
     input {
       border: 0px;
       color: #c7b4ff;
       font-size: 16px;
       padding: 10px;
+    }
+    h3,
+    .searching-text {
+      font-size: 14px;
+      text-align: start;
+      padding: 10px;
+    }
+    .searching-text {
+      color: gray;
     }
   }
   p {
@@ -77,6 +96,11 @@ export const StepThreeStyled = styled.div`
       height: 50px;
       font-weight: 700;
       font-size: 16px;
+      cursor: pointer;
+    }
+    li:hover {
+      background-color: #5897fb !important;
+      color: white;
     }
   }
 `;
