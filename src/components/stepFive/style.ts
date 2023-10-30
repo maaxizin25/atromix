@@ -11,6 +11,9 @@ export const StepFiveStyle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    h2 {
+      font-size: 20px;
+    }
   }
   .container-select-gender {
     display: flex;
@@ -29,6 +32,9 @@ export const StepFiveStyle = styled.div`
       div {
         display: flex;
         gap: 10px;
+      }
+      p {
+        font-weight: 700;
       }
     }
   }
@@ -53,7 +59,15 @@ export const StepFiveStyle = styled.div`
     }
     input::placeholder {
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
+      color: #c6aee0;
+      font-weight: 600;
+    }
+    h2 {
+      margin-top: 10px;
+      display: flex;
+      color: red;
+      font-size: 12px;
     }
   }
 `;

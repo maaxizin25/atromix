@@ -5,6 +5,8 @@ export const StepCalculateHoroscopeStyle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 20px 0px;
   .container {
     display: flex;
     position: relative;
@@ -84,7 +86,7 @@ export const StepCalculateHoroscopeStyle = styled.div`
         border-bottom: 1px solid gray;
         h2 {
           font-size: 18px;
-          font-weight: 400;
+          font-weight: 700;
         }
         p {
           width: 30%;
@@ -100,7 +102,7 @@ export const StepCalculateHoroscopeStyle = styled.div`
     }
   }
   .progress-container {
-    width: 80%;
+    width: 90%;
     margin-top: 280px;
     height: 20px;
     border-radius: 32px;
@@ -118,6 +120,7 @@ export const StepCalculateHoroscopeStyle = styled.div`
   }
   .check-finish {
     position: absolute;
+    width: 80%;
   }
   .final-message {
     padding: 20px;

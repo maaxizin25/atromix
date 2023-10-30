@@ -7,9 +7,16 @@ export const StepOneStyled = styled.form`
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 20px;
+  gap: 10px;
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
   .telescope-img {
     width: 151px;
+    margin-bottom: 20px;
   }
   .select-your-data {
     width: 80%;
@@ -28,6 +35,21 @@ export const StepOneStyled = styled.form`
       font-weight: 700;
       font-size: 16px;
       outline: none;
+    }
+  }
+  @media (min-width: 600px) {
+    .select-your-data {
+      width: 100%;
+      select {
+        width: 25%;
+        height: 60px;
+      }
+      select:nth-child(2) {
+        width: 10%;
+      }
+      select:nth-child(3) {
+        width: 20%;
+      }
     }
   }
 `;

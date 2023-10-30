@@ -58,7 +58,7 @@ export const StepThreeComponent = () => {
     setListCity([]);
     setTimeout(() => {
       setInputValue(e.target.value);
-    }, 1500);
+    }, 500);
   };
 
   const verifyCity = () => {
@@ -71,12 +71,15 @@ export const StepThreeComponent = () => {
 
   return (
     <StepThreeStyled>
-      <h2>Especifica tu lugar de nacimiento</h2>
-      <p>
-        Utilizamos esta información para determinar la posición y la influencia
-        del planetas en tu carta natal
-      </p>
-      <img src={lugarDeNascimiento} alt="" />
+      <div className="container-elements">
+        <h2>Especifica tu lugar de nacimiento</h2>
+        <p>
+          Utilizamos esta información para determinar la posición y la
+          influencia del planetas en tu carta natal
+        </p>
+        <img src={lugarDeNascimiento} alt="" />
+      </div>
+
       <form action="">
         <div className="select-container" onClick={inputOpenModal}>
           <div className="selected-value">
@@ -90,7 +93,7 @@ export const StepThreeComponent = () => {
             {inputValue.length < 3 && (
               <h3>Por favor ingrese 3 o más caracteres</h3>
             )}
-            {isSearch && <h2>Buscando...</h2>}
+            {isSearch && <h2 className="searching-text">Buscando...</h2>}
           </span>
         )}
       </form>

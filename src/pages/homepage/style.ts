@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const HomePageStyled = styled.main`
   width: 100%;
-  background-color: whitesmoke;
+  height: 100vh;
+  background-color: white;
   .container-form {
     position: relative;
     width: 100%;
@@ -16,7 +17,7 @@ export const HomePageStyled = styled.main`
     .container-form {
       max-width: 600px;
       border-radius: 16px !important;
-      height: 750px;
+      height: 72%;
     }
   }
 `;
