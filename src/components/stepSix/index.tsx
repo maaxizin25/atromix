@@ -6,8 +6,15 @@ import { apiActive } from "../../services/api";
 import { AppContext } from "../../context/appContext";
 
 export const StepSixComponent = () => {
-  const { nameUser, signo, dateBirth, hourDateBirth, city, selectedGender } =
-    useContext(AppContext);
+  const {
+    nameUser,
+    signo,
+    dateBirth,
+    hourDateBirth,
+    city,
+    selectedGender,
+    increamentStep,
+  } = useContext(AppContext);
   const [emailUser, setEmailUser] = useState("");
   const [isSelect, setIsSelect] = useState<boolean | null>(null);
 
@@ -50,6 +57,7 @@ export const StepSixComponent = () => {
     e.preventDefault();
     if (isSelect) {
       await postInActive();
+      increamentStep();
     } else {
       setIsSelect(false);
     }
