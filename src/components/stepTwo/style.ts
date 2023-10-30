@@ -4,7 +4,7 @@ export const StepTwoStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   text-align: center;
   margin-top: 20px;
   p {
@@ -12,5 +12,13 @@ export const StepTwoStyled = styled.div`
   }
   img {
     width: 150px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 600px) {
+    p {
+      padding: 0 40px;
+      font-size: 18px;
+    }
   }
 `;
