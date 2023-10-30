@@ -47,12 +47,15 @@ export const StepFourComponent = () => {
 
   return (
     <StepFourStyle>
-      <h2>Introduce tu hora de nacimiento</h2>
-      <p>
-        Es importante para definir el ascendente, las casas y la posición de la
-        luna en tu carta natal
-      </p>
-      <img src={horaNascimiento} alt="" />
+      <div className="container-itens-section">
+        <h2>Introduce tu hora de nacimiento</h2>
+        <p>
+          Es importante para definir el ascendente, las casas y la posición de
+          la luna en tu carta natal
+        </p>
+        <img src={horaNascimiento} alt="" />
+      </div>
+
       <form>
         <div className="container-input-and-hour">
           <input
@@ -80,11 +83,9 @@ export const StepFourComponent = () => {
           <input
             onChange={userDontKnowHourBirth}
             type="checkbox"
-            id="maca"
-            name="fruta"
-            value="maca"
+            id="no-hour"
           />
-          <label htmlFor="maca">No sé la hora exacta de nacimiento</label>
+          <label htmlFor="no-hour">No sé la hora exacta de nacimiento</label>
         </div>
         {isValidTime && (
           <h2 className="error-hour">Introduce tu hora de nacimiento</h2>

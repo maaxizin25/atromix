@@ -10,6 +10,7 @@ import { StepFourComponent } from "../../components/stepFour";
 import { StepFiveComponent } from "../../components/stepFive";
 import { StepSixComponent } from "../../components/stepSix";
 import { StepCalculateHoroscope } from "../../components/stepCalculateHoroscope";
+import { ReturnButtonComponent } from "../../components/returnButton";
 
 export const HomePage = () => {
   const { currentStep } = useContext(AppContext);
@@ -17,6 +18,7 @@ export const HomePage = () => {
     <HomePageStyled>
       <NavBarComponent />
       <div className="container-form">
+        {currentStep > 1 && <ReturnButtonComponent />}
         {currentStep < 7 && <StepImgsComponents />}
         {currentStep === 1 && <StepOneComponent />}
         {currentStep === 2 && <StepTwoComponent />}

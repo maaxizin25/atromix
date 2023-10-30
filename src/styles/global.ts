@@ -9,6 +9,7 @@ margin: 0;
 padding: 0;
 
 box-sizing: border-box;
+font-family: "Cyntho Next", sans-serif;
 
 }
 h2 {
@@ -21,9 +22,6 @@ p {
 button{
 
 cursor: pointer;
-
-font-family: "Inter";
-
 border: none;
 
 }

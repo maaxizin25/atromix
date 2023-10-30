@@ -82,27 +82,34 @@ export const StepSixComponent = () => {
             con recomendaciones personales del astrólogo principal de Astromix.
           </b>
         </p>
-        <form onSubmit={onSubmitForm} className="input-container">
-          <label htmlFor="emailInput"></label>
-          <input
-            type="email"
-            id="emailInput"
-            required
-            placeholder="Correo electrónico"
-            onChange={handleChangeInput}
-          />
-          <p>Recibirás consejos basados en tu información personal.</p>
-          <label>
-            <input onChange={handleChangeChecked} type="checkbox" />
-            <p>Acepto el Acuerdo de Usuario, Política de Privacidad</p>
-          </label>
-          {isSelect === false && <h2>Por favor acpte el acuerdo</h2>}
-          <div>
-            <p>Todos tus datos personales están protegidos</p>
-          </div>
-          <ButtonSubmitComponent />
-        </form>
       </div>
+
+      <form onSubmit={onSubmitForm} className="input-container">
+        <label htmlFor="emailInput"></label>
+        <input
+          type="email"
+          id="emailInput"
+          required
+          placeholder="Correo electrónico"
+          onChange={handleChangeInput}
+        />
+        <p className="description-input">
+          Recibirás consejos basados en tu información personal.
+        </p>
+        <label>
+          <input onChange={handleChangeChecked} type="checkbox" />
+          <p>Acepto el Acuerdo de Usuario, Política de Privacidad</p>
+        </label>
+        {isSelect === false && (
+          <h2 className="invalid-accept">Por favor acpte el acuerdo</h2>
+        )}
+        <div>
+          <p className="footer-data">
+            Todos tus datos personales están protegidos
+          </p>
+        </div>
+        <ButtonSubmitComponent />
+      </form>
     </StepSixStyle>
   );
 };
