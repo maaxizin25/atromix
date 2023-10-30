@@ -36,7 +36,7 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [isInputNameValid, setIsInputNameValid] = useState(true);
 
   const increamentStep = () => {
-    if (currentStep < 6) {
+    if (currentStep < 7) {
       setCurrentStep(currentStep + 1);
     }
   };
