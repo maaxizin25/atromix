@@ -8,5 +8,8 @@ export const api = axios.create({
   },
 });
 export const apiActive = axios.create({
-  baseURL: "https://hooks.zapier.com/hooks/catch/16450525/38zbndc/",
+  baseURL: "https://atromix-be-production.up.railway.app/",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });

@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const HomePageStyled = styled.main`
-  height: 100vh;
   width: 100%;
   background-color: whitesmoke;
   .container-form {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
     background-color: white;
     border-radius: 0px;
