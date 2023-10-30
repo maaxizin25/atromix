@@ -8,15 +8,17 @@ export const NavComponentStyled = styled.nav`
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin-bottom: 10px;
+  border-bottom: 6px solid whitesmoke;
   position: relative;
-  button {
+  img {
     position: absolute;
-    left: 2px;
+    left: 10px;
   }
   @media only screen and (min-width: 600px) {
-    button {
+    img {
       display: none;
     }
+    margin-bottom: 3%;
+    border: 0;
   }
 `;
