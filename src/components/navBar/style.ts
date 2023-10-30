@@ -10,7 +10,10 @@ export const NavComponentStyled = styled.nav`
   background-color: white;
   border-bottom: 6px solid whitesmoke;
   position: relative;
-  img {
+  .logo {
+    width: 200px;
+  }
+  .return-button {
     position: absolute;
     left: 10px;
   }
