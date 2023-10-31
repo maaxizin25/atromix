@@ -8,9 +8,9 @@ export const NavComponentStyled = styled.nav`
   align-items: center;
   justify-content: center;
   background-color: white;
-  border-bottom: 6px solid whitesmoke;
   position: relative;
   .logo {
+    margin-top: 8px;
     width: 200px;
   }
   .return-button {
@@ -18,7 +18,7 @@ export const NavComponentStyled = styled.nav`
     left: 10px;
   }
   @media only screen and (min-width: 600px) {
-    img {
+    .return-button {
       display: none;
     }
     margin-bottom: 3%;

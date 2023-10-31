@@ -10,6 +10,7 @@ export const StepOneStyled = styled.form`
   gap: 10px;
   h2 {
     font-size: 20px;
+    padding: 0px 10px;
   }
   p {
     font-size: 14px;
