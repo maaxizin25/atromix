@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ButtonSubmitStyled = styled.button`
   position: absolute;
   z-index: 0;
-  bottom: 60px;
+  bottom: 0px;
   width: 100%;
   max-width: 336px;
   height: 50px;
