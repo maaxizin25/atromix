@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionSixResultStyle = styled.div`
+export const SectionSevenResultStyle = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -16,6 +16,10 @@ export const SectionSixResultStyle = styled.div`
     h2 {
       font-weight: 500;
     }
+    h3 {
+      color: #5c569d;
+      font-size: 20px;
+    }
     .description-texts {
       display: flex;
       flex-direction: column;
@@ -27,6 +31,9 @@ export const SectionSixResultStyle = styled.div`
       }
       .ocult-element {
         filter: blur(6px);
+      }
+      h3 {
+        text-align: center;
       }
     }
   }

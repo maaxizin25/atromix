@@ -2,6 +2,7 @@ import logo from "../../assets/ASTRODESTINO.png";
 import { SectionFiveResultComponent } from "../../components/sectionFiveResult";
 import { SectionFourResultComponent } from "../../components/sectionFourResult";
 import { SectionOneResultComponent } from "../../components/sectionOneResult";
+import { SectionSevenResultComponent } from "../../components/sectionSevenResult";
 import { SectionSixResultComponent } from "../../components/sectionSixResult";
 import { SectionThreeResultComponent } from "../../components/sectionThreeResult";
 import { SectionTwoResultComponent } from "../../components/sectionTwoResult";
@@ -20,6 +21,7 @@ export const ResultPage = () => {
         <SectionFourResultComponent />
         <SectionFiveResultComponent />
         <SectionSixResultComponent />
+        <SectionSevenResultComponent />
       </div>
     </ResultPageStyle>
   );
