@@ -103,19 +103,16 @@ export const StepCalculateHoroscopeStyle = styled.div`
   }
   .progress-container {
     width: 90%;
-    margin-top: 280px;
+    margin-top: 200px;
     height: 20px;
     border-radius: 32px;
-    position: relative;
+    bottom: 45px;
   }
 
   .progress-bar {
     border-radius: 32px;
     height: 100%;
     background: linear-gradient(to left, #ff69b4, #800080, #00bfff);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
   }
   .check-finish {
@@ -123,7 +120,21 @@ export const StepCalculateHoroscopeStyle = styled.div`
     width: 80%;
   }
   .final-message {
+    display: flex;
     padding: 20px;
+  }
+
+  @media (min-width: 600px) {
+    .check-finish {
+      bottom: 160px;
+    }
+    .progress-container {
+      position: absolute;
+    }
+    .final-message {
+      position: absolute;
+      bottom: 0px;
+    }
   }
 
   @keyframes spin {

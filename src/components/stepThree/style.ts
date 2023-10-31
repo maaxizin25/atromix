@@ -33,26 +33,7 @@ export const StepThreeStyled = styled.div`
     outline: none;
     background-color: #f9efff;
   }
-  .container-input-search-city {
-    display: flex;
-    flex-direction: column;
-    background-color: #f9efff;
-    input {
-      border: 0px;
-      color: #c7b4ff;
-      font-size: 16px;
-      padding: 10px;
-    }
-    h3,
-    .searching-text {
-      font-size: 14px;
-      text-align: start;
-      padding: 10px;
-    }
-    .searching-text {
-      color: gray;
-    }
-  }
+
   p {
     padding: 0px 20px;
   }
@@ -81,26 +62,5 @@ export const StepThreeStyled = styled.div`
 
   .arrow-down {
     border-top: 6px solid gray; /* Define a cor da seta para baixo */
-  }
-  .list-of-citys {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    z-index: 1;
-    li {
-      display: flex;
-      align-items: center;
-      text-align: start;
-      background-color: #f4efff !important;
-      padding: 10px;
-      height: 50px;
-      font-weight: 700;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    li:hover {
-      background-color: #5897fb !important;
-      color: white;
-    }
   }
 `;
