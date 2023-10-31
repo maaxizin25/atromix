@@ -5,6 +5,7 @@ export const ButtonCheckoutStyle = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  text-align: center;
   font-weight: 50;
   width: 100%;
   border-radius: 32px;
