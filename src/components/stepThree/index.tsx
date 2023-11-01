@@ -5,20 +5,34 @@ import { StepThreeStyled } from "./style";
 import { AppContext } from "../../context/appContext";
 import { ListContryComponent } from "../listCountry";
 export const StepThreeComponent = () => {
-  const { increamentStep, city, isInputOpen, inputOpenModal } =
-    useContext(AppContext);
-
+  const {
+    increamentStep,
+    city,
+    isInputOpen,
+    inputOpenModal,
+    isInputInformCityOpen,
+    handleChangeSetIsInputInformCity,
+    insertCity,
+  } = useContext(AppContext);
   const [isInvalidCity, setIsInvalidCity] = useState(false);
 
   const verifyCity = () => {
-    if (city === "Lugar de nacimiento (País)") {
+    if (
+      city === "Lugar de nacimiento (País)" ||
+      city.length < 3 ||
+      city === "Selecciona otro país"
+    ) {
       setIsInvalidCity(true);
     } else {
       increamentStep();
     }
   };
   const handleChangeOpenList = () => {
+    if (isInputInformCityOpen) {
+      return;
+    }
     inputOpenModal();
+    handleChangeSetIsInputInformCity(false);
     setIsInvalidCity(false);
   };
 
@@ -36,14 +50,27 @@ export const StepThreeComponent = () => {
       <form action="">
         <div className="select-container" onClick={handleChangeOpenList}>
           <div className="selected-value">
-            <h2>{city}</h2>
-            <div className="arrow-down"></div>
+            {isInputInformCityOpen ? (
+              <input
+                onChange={(e) => insertCity(e.target.value)}
+                className=""
+                defaultValue={city}
+                placeholder="Introduce tu país"
+                type="text"
+              />
+            ) : (
+              <h2>{city}</h2>
+            )}
+            <div
+              onClick={() => handleChangeSetIsInputInformCity(false)}
+              className="arrow-down"
+            ></div>
           </div>
         </div>
         {isInputOpen && <ListContryComponent />}
       </form>
       {isInvalidCity && (
-        <h2 className="error-city">Por favor inserte su ciudad</h2>
+        <h2 className="error-city">Por favor inserte su país</h2>
       )}
       <ButtonSubmitComponent onClick={verifyCity} />
     </StepThreeStyled>

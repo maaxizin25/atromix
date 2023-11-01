@@ -10,20 +10,19 @@ export const SectionFourResultComponent = () => {
     <SectionFourResultStyle>
       <div>
         <img src={spermImg} alt="" />
-        <h2>Fears which prevent you from getting pregnant</h2>
+        <h2>Miedos que te impiden quedar embarazada</h2>
         <span>
-          {nameUser}, you are strongly influenced by the idea that the only real
-          family is the one that has children. So pregnancy is important to you
-          for a couple of reasons. Firstly, your parents will finally
-          acknowledge your marriage as successful. Secondly, you want to make
-          your parents happy by giving them grandchildren. If you can’t get
-          pregnant, the reasons might lie in your family’s past. Perhaps, your
-          parents or grandparents went through
+          {nameUser}, estás fuertemente influenciada por la idea de que la única
+          familia real es aquella que tiene hijos. Por lo tanto, el embarazo es
+          importante para ti por un par de razones. En primer lugar, tus padres
+          finalmente reconocerán tu matrimonio como exitoso. En segundo lugar,
+          deseas hacer felices a tus padres dándoles nietos. Si no puedes quedar
+          embarazada, las razones pueden estar en el pasado de tu familia. Tal
+          vez, tus padres o abuelos pasaron por
           <p>
-            Secondly, you want to make your parents happy by giving them
-            grandchildren. If you can’t get pregnant, the reasons might lie in
-            your family’s past. Perhaps, your parents or grandparents went
-            through
+            En segundo lugar, deseas hacer felices a tus padres dándoles nietos.
+            Si no puedes quedar embarazada, las razones pueden estar en el
+            pasado de tu familia. Tal vez, tus padres o abuelos pasaron por
           </p>
         </span>
         <ButtonCheckoutComponent />

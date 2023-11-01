@@ -8,28 +8,29 @@ export const SectionSevenResultComponent = () => {
       <div>
         <img src={mamadeira} alt="" />
         <h2>
-          How can you increase the probability of conception? Here are personal
-          practicums from the astrologer
+          ¿Cómo puedes aumentar la probabilidad de concepción? Aquí tienes
+          prácticas personales del astrólogo
         </h2>
-        <h3>Vizualization to eliminate psychological blocks</h3>
+        <h3>Visualización para eliminar bloqueos psicológicos</h3>
         <div className="description-texts">
           <p>
-            Take on a comfortable position, relax as much as possible and count
-            from 1 to 10, then back. Calm your thoughts and imagine that you are
-            on the shore of a picturesque river, in front of you - a small boat
-            with oars. You get in the boat and start to row. It’s difficult -
-            the boat is hardly moving as it is weighed down by large sacks. You
-            take the sack labled as “Fear” and throw it overboard. You try to
-            row again, but the boat is still overloaded, so next you throw the
-            sack labled “Anxiety” overboard, then “Negativity”, “Grudges”,
-            “Failures” - each and every one of them!
+            Adopta una posición cómoda, relájate lo máximo posible y cuenta del
+            1 al 10, luego en reversa. Calma tus pensamientos e imagina que
+            estás en la orilla de un pintoresco río, frente a ti hay una pequeña
+            embarcación con remos. Subes a la embarcación y comienzas a remar.
+            Es difícil: la embarcación apenas se mueve, ya que está cargada con
+            sacos grandes. Tomas el saco etiquetado como "Miedo" y lo arrojas
+            por la borda. Intentas remar de nuevo, pero la embarcación sigue
+            sobrecargada, así que a continuación arrojas el saco etiquetado como
+            "Ansiedad" por la borda, luego "Negatividad", "Rencores",
+            "Fracasos", ¡todos y cada uno de ellos!
           </p>
-          <h3>Blessing of the Clan ritual</h3>
+          <h3>Ritual de Bendición del Clan</h3>
           <p className="ocult-element">
-            “Fear” and throw it overboard. You try to row again, but the boat is
-            still overloaded, so next you throw the sack labled “Anxiety”
-            overboard, then “Negativity”, “Grudges”, “Failures” - each and every
-            one of them!
+            "Miedo" y lo arrojas por la borda. Intentas remar de nuevo, pero la
+            embarcación sigue sobrecargada, así que a continuación arrojas el
+            saco etiquetado como "Ansiedad" por la borda, luego "Negatividad",
+            "Rencores", "Fracasos", ¡todos y cada uno de ellos!
           </p>
         </div>
         <ButtonCheckoutComponent />

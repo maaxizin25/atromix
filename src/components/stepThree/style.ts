@@ -28,9 +28,12 @@ export const StepThreeStyled = styled.div`
     background-color: #f9efff;
   }
   input {
-    margin-top: -10px;
-    height: 50px;
+    width: 80%;
+    height: 40px;
     outline: none;
+    border: none;
+    color: #c7b4ff;
+    font-size: 16px;
     background-color: #f9efff;
   }
 
@@ -58,6 +61,11 @@ export const StepThreeStyled = styled.div`
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
+  }
+  .error-city {
+    margin-top: 10px;
+    font-size: 16px;
+    color: red;
   }
 
   .arrow-down {

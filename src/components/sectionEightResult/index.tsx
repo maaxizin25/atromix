@@ -8,9 +8,9 @@ export const SectionEightResultComponent = () => {
     <SectionEightResultStyle>
       <div>
         <img src={calendar} alt="" />
-        <h2>Conception calendar for the month</h2>
+        <h2>Calendario de concepción para el mes</h2>
         <img src={calendarExample} alt="" />
-        <p>Calendar example*</p>
+        <p>Ejemplo de calendario*</p>
       </div>
       <ButtonCheckoutComponent />
     </SectionEightResultStyle>

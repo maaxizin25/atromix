@@ -6,31 +6,31 @@ export const SectionNineResultComponent = () => {
   return (
     <SectionNineResultStyle>
       <div>
-        <h2>"Conception horoscope" includes the following chapters:</h2>
+        <h2>El "Horóscopo de Concepción" incluye los siguientes capítulos:</h2>
         <ul>
           <li>
             <img src={star} alt="" />
-            <p>Personal recommendations for conception </p>
+            <p>Recomendaciones personales para la concepción </p>
           </li>
           <li>
             <img src={star} alt="" />
-            <p>Health and conception of the child </p>
+            <p>Salud y concepción del niño </p>
           </li>
           <li>
             <img src={star} alt="" />
-            <p>Analysis of health according to the natal chart </p>
+            <p>Análisis de la salud según la carta natal </p>
           </li>
           <li>
             <img src={star} alt="" />
-            <p>Female practicums for conception </p>
+            <p>Prácticas femeninas para la concepción </p>
           </li>
           <li>
             <img src={star} alt="" />
-            <p>Conception calendar for the next month </p>
+            <p>Calendario de concepción para el próximo mes </p>
           </li>
         </ul>
         <h2>
-          Find out how to increase the probability of pregnancy right now!
+          ¡Descubre cómo aumentar la probabilidad de embarazo ahora mismo!
         </h2>
         <ButtonCheckoutComponent />
       </div>

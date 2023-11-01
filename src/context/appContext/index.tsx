@@ -30,11 +30,12 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     img: capricornio,
   });
   const [city, setCity] = useState("Lugar de nacimiento (País)");
+  const [isInputInformCityOpen, setIsInputInformCity] = useState(false);
   const [isInputOpen, setInputOpen] = useState<boolean>(false);
   const [hourDateBirth, setHourDateBirth] = useState("");
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
   const [nameUser, setNameUser] = useState<string>("");
-  const [isInputNameValid, setIsInputNameValid] = useState(true);
+  const [isInputNameValid, setIsInputNameValid] = useState<boolean>(true);
   const increamentStep = () => {
     if (currentStep < 8) {
       setCurrentStep(currentStep + 1);
@@ -144,8 +145,18 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     increamentStep();
   };
 
+  const handleChangeSetIsInputInformCity = (e: boolean) => {
+    setIsInputInformCity(e);
+    setCity("Lugar de nacimiento (País)");
+  };
+
   const insertCity = (e: string) => {
-    setCity(e);
+    if (e == "Selecciona otro país") {
+      handleChangeSetIsInputInformCity(true);
+      setCity("");
+    } else {
+      setCity(e);
+    }
     setInputOpen(false);
   };
 
@@ -188,6 +199,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         setIsInputNameValid,
         handleChangeLoading,
         loading,
+        isInputInformCityOpen,
+        handleChangeSetIsInputInformCity,
       }}
     >
       {children}

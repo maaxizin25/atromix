@@ -7,32 +7,34 @@ export const SectionSixResultComponent = () => {
     <SectionSixResultStyle>
       <div>
         <img src={spermImg} alt="" />
-        <h2>How to significantly increase your chances of getting pregnant?</h2>
+        <h2>
+          ¿Cómo aumentar significativamente tus posibilidades de quedar
+          embarazada?
+        </h2>
         <div className="description-texts">
           <p>
-            Foremost of all, we recommend you consult an experienced doctor.
-            However, outside of traditional medicine, there are actions you can
-            take independently to increase the probability of conception and
-            birth of a healthy child.
+            Ante todo, te recomendamos que consultes a un médico experimentado.
+            Sin embargo, fuera de la medicina tradicional, existen acciones que
+            puedes tomar de forma independiente para aumentar la probabilidad de
+            concepción y el nacimiento de un hijo sano.
           </p>
           <p>
-            <b>1. Normalization of nutrients in the Gastrointestinal tract</b>{" "}
-            (calcium, iodine, zinc, vitamin D, B12, B6 - get the full list from
-            your doctor - all are nutrients that need to be stabilized prior to
-            conception. It is best to even out the deficit with natural foods
-            and not synthetic additives);
+            <b>1. Normalización de nutrientes en el tracto gastrointestinal</b>{" "}
+            (calcio, yodo, zinc, vitamina D, B12, B6: obtén la lista completa de
+            tu médico; todos son nutrientes que deben estabilizarse antes de la
+            concepción. Es mejor equilibrar el déficit con alimentos naturales
+            en lugar de aditivos sintéticos).
           </p>
           <span>
-            <b>2. Active sex life</b>
-            <p> (no less than 2-3 times per week) </p>
+            <b>2. Vida sexual activa</b>
+            <p> (no menos de 2-3 veces por semana) </p>
           </span>
-          <p className="ocult-element">3. Unhealth Unhealthy</p>
+          <p className="ocult-element">3. No saludable No saludable</p>
           <p className="ocult-element">
-            {" "}
-            The lacknd your child. definitely affect the well-being of you and
-            your child The lacknd your child. definitely affect the well-being
-            of you and your child The lacknd your child. definitely affect the
-            well-being of you and your child
+            La falta y tu hijo, definitivamente afectará el bienestar tuyo y de
+            tu hijo. La falta y tu hijo, definitivamente afectará el bienestar
+            tuyo y de tu hijo. La falta y tu hijo, definitivamente afectará el
+            bienestar tuyo y de tu hijo.
           </p>
         </div>
         <ButtonCheckoutComponent />
