@@ -12,7 +12,7 @@ export const ReviewsComponent = () => {
   return (
     <ReviewStyle>
       <div>
-        <h2>Reviews</h2>
+        <h2>Reseñas</h2>
         <ul>
           <li>
             <img className="img-perfil" src={perfilOne} alt="" />
@@ -26,9 +26,9 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Thanks so much for your horoscope and for all the work you’ve
-              done! More importantly, you gave me hope and the strength to move
-              on!
+              Muchas gracias por tu horóscopo y por todo el trabajo que has
+              hecho. ¡hecho! Más importante aún, me diste esperanza y la fuerza
+              para seguir adelante. ¡en!
             </p>
           </li>
           <li>
@@ -43,12 +43,12 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Thanks for the detailed horoscope, Astromix. It was the first time
-              I ever tried something like this, so I was kind of suspicious. But
-              my fears were completely unfounded. I got all the answers to my
-              questions and I’d say I got quite a lot for my money! It was nice
-              to get your horoscope and I’ll be happy to order another one.
-              Thanks a lot.
+              Gracias por el horóscopo detallado, Astromix. Fue la primera vez
+              Alguna vez probé algo como esto, así que sospechaba un poco. Pero
+              Mis temores eran completamente infundados. Tengo todas las
+              respuestas a mi preguntas y diría que obtuve bastante por mi
+              dinero. Fue agradable para obtener tu horóscopo y estaré encantado
+              de pedir otro. Muchas gracias.
             </p>
           </li>
           <li>
@@ -63,7 +63,8 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Hi! Got everything, really liked your product. 10 out of 10!
+              ¡Hola! Lo tengo todo, realmente me gustó su producto. ¡10 de los
+              10!
             </p>
           </li>
           <li>
@@ -78,9 +79,9 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              I’d like to thank you for the personality horoscope. The facts are
-              about 95% accurate. Hope that the 10-year horoscope has this level
-              of accuracy too. Thank you.
+              Me gustaría agradecerte por el horóscopo de la personalidad. Los
+              hechos son alrededor del 95% de precisión. Espero que el horóscopo
+              de 10 años tenga este nivel. de precisión también. Gracias.
             </p>
           </li>
           <li>
@@ -95,11 +96,11 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Thanks so much! I got my personal horoscope. Learned a lot about
-              myself. I was really surprised by how accurately it described all
-              the past events in my life. I used to feel quite skeptical about
-              horoscopes before... But thanks to you, I’ll discover more about
-              myself!
+              ¡Muchas gracias! Tengo mi horóscopo personal. Aprendí mucho sobre
+              mí mismo. Me sorprendió mucho la precisión con la que describía
+              todo. los acontecimientos pasados en mi vida. Solía sentirme
+              bastante escéptico acerca de horóscopos antes... Pero gracias a
+              ti, descubriré más sobre ¡mí mismo!
             </p>
           </li>
           <li>
@@ -114,7 +115,7 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Thanks so much for the interesting horoscope! It’s so me!
+              ¡Muchas gracias por el interesante horóscopo! ¡Es tan yo!
             </p>
           </li>
           <li>
@@ -129,9 +130,10 @@ export const ReviewsComponent = () => {
               <img src={star} alt="" />
             </div>
             <p className="feedback">
-              Honestly, I’m so shocked. This horoscope is just so accurate. I’ll
-              read it again and again. I totally agree about female energy. I’m
-              used to making my own decisions and don’t expect help from anyone.
+              Honestamente, estoy muy sorprendido. Este horóscopo es muy
+              preciso. Enfermo léelo una y otra vez. Estoy totalmente de acuerdo
+              con lo de la energía femenina. Soy Estoy acostumbrado a tomar mis
+              propias decisiones y no espero ayuda de nadie.
             </p>
           </li>
         </ul>

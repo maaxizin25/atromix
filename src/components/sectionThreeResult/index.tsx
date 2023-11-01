@@ -14,46 +14,46 @@ export const SectionThreeResultComponent = () => {
     <SectionThreeResultStyle>
       <div>
         <img src={babyImg} alt="" />
-        <h2>When you will get pregnant?</h2>
-        <p>Here is an accurate prediction from the astrologist</p>
+        <h2>¿Cuándo quedarás embarazada?</h2>
+        <p>Aquí tienes una predicción precisa del astrólogo</p>
         <p>
-          {nameUser}, we analyzed the astrological factors affecting your life
-          and have found periods when the possibility of getting pregnant is the
-          highest
+          {nameUser}, hemos analizado los factores astrológicos que afectan tu
+          vida y hemos encontrado períodos en los que la posibilidad de quedar
+          embarazada es la más alta.
         </p>
       </div>
       <div>
         <div>
           <img src={calendar} alt="" />
           <span>
-            Year of get pregnant: <p>0</p>
+            Año de quedar embarazada: <p>0</p>
           </span>
         </div>
         <div>
           <img src={clockImg} alt="" />
           <span>
-            Date of get pregnant: <p>0</p>
+            Fecha de quedar embarazada: <p>0</p>
           </span>
         </div>
       </div>
       <div className="container-astroadvice">
         <div>
           <img src={aspas} alt="" />
-          <h2>Your Astro-Advice</h2>
+          <h2>Tu Astroconsejo</h2>
         </div>
         <div>
           <p>
-            According to Conception Calendar, this period will be very opportune
-            for you! With certainty, we tell you:
+            ¡Según el Calendario de Concepción, este período será muy oportuno
+            para ti! Con certeza, te lo decimos:
           </p>
           <p>
-            According to Conception Calendar, this perill be very opportune for
-            you! Wi
+            ¡Según el Calendario de Concepción, este período será muy oportuno
+            para ti! Wi
           </p>
         </div>
       </div>
       <div>
-        <h2>When are you destined to get pregnant?</h2>
+        <h2>¿Cuándo estás destinada a quedar embarazada?</h2>
         <ButtonCheckoutComponent />
       </div>
     </SectionThreeResultStyle>

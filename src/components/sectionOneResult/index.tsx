@@ -39,8 +39,8 @@ export const SectionOneResultComponent = () => {
   return (
     <SectionOneResultStyle>
       <div>
-        <h2>Conception horoscope</h2>
-        <p>Preview of Horoscope</p>
+        <h2>Concepción horóscopo</h2>
+        <p>Vista previa del Horóscopo</p>
         <div className="info-user">
           <h3>{nameUser}</h3>
           <p>{getInfoUser(dateBirth)}</p>
@@ -52,15 +52,14 @@ export const SectionOneResultComponent = () => {
         </div>
         <div className="message-to-signal">
           <p>
-            {nameUser}, we have compiled your natal chart and already have
-            information about your future motherhood{" "}
-            <b>with an 80% accuracy.</b>
+            {nameUser}, hemos compilado tu carta natal y ya tenemos información
+            sobre tu futura maternidad <b>con un 80% de precisión.</b>
           </p>
           <p className="description-message">
             <em>
-              This page is a preview with examples of the full version of the
-              horoscope, so you will only be privy to part of what the birth
-              chart reveals.
+              Esta página es una vista previa con ejemplos de la versión
+              completa del horóscopo, por lo que solo tendrás acceso a parte de
+              lo que revela la carta astral.
             </em>
           </p>
         </div>

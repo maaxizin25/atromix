@@ -154,8 +154,9 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     if (e == "Selecciona otro país") {
       handleChangeSetIsInputInformCity(true);
       setCity("");
+    } else {
+      setCity(e);
     }
-    setCity(e);
     setInputOpen(false);
   };
 
