@@ -35,7 +35,7 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [hourDateBirth, setHourDateBirth] = useState("");
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
   const [nameUser, setNameUser] = useState<string>("");
-  const [isInputNameValid, setIsInputNameValid] = useState(true);
+  const [isInputNameValid, setIsInputNameValid] = useState<boolean>(true);
   const increamentStep = () => {
     if (currentStep < 8) {
       setCurrentStep(currentStep + 1);
@@ -145,8 +145,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     increamentStep();
   };
 
-  const handleChangeSetIsInputInformCity = (value: boolean) => {
-    setIsInputInformCity(value);
+  const handleChangeSetIsInputInformCity = (e: boolean) => {
+    setIsInputInformCity(e);
     setCity("Lugar de nacimiento (País)");
   };
 
