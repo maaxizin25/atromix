@@ -16,6 +16,7 @@ import virgo from "../../assets/virgo.svg";
 export const AppContext = createContext({} as iAppContext);
 
 export const AppProvider = ({ children }: iAppContextProps) => {
+  const [loading, setIsLoading] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [dateBirth, setDateBirth] = useState<iAppContext["dateBirth"]>({
     month: "1",
@@ -28,7 +29,7 @@ export const AppProvider = ({ children }: iAppContextProps) => {
       "Los capricornianos suelen ser ambiciosos y se guían únicamente por la mente. Son reservados, fríos e irremediablemente ordenados, por lo que siempre controlan la situación y actúan con criterio, apoyándose en el sentido común. Al mismo tiempo, a los Capricornio les resulta difícil comprender sus propias emociones y las de los demás, lo que puede provocar malentendidos y discrepancias.",
     img: capricornio,
   });
-  const [city, setCity] = useState("Lugar de nacimiento (Ciudad)");
+  const [city, setCity] = useState("Lugar de nacimiento (País)");
   const [isInputOpen, setInputOpen] = useState<boolean>(false);
   const [hourDateBirth, setHourDateBirth] = useState("");
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
@@ -38,6 +39,9 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     if (currentStep < 8) {
       setCurrentStep(currentStep + 1);
     }
+  };
+  const handleChangeLoading = () => {
+    setIsLoading(!loading);
   };
   const decreamentStep = () => {
     if (currentStep >= 2) {
@@ -182,6 +186,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         nameUser,
         isInputNameValid,
         setIsInputNameValid,
+        handleChangeLoading,
+        loading,
       }}
     >
       {children}

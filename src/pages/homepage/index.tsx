@@ -18,7 +18,7 @@ export const HomePage = () => {
     <HomePageStyled>
       <NavBarComponent />
       <div className="container-form">
-        {currentStep > 1 && <ReturnButtonComponent />}
+        {currentStep > 1 && currentStep < 7 && <ReturnButtonComponent />}
         {currentStep < 7 && <StepImgsComponents />}
         {currentStep === 1 && <StepOneComponent />}
         {currentStep === 2 && <StepTwoComponent />}

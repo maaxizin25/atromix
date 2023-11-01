@@ -33,4 +33,6 @@ export interface iAppContext {
   nameUser: string;
   isInputNameValid: boolean;
   setIsInputNameValid: (e: boolean) => void;
+  handleChangeLoading: () => void;
+  loading: boolean;
 }

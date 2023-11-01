@@ -11,7 +11,7 @@ export const StepThreeComponent = () => {
   const [isInvalidCity, setIsInvalidCity] = useState(false);
 
   const verifyCity = () => {
-    if (city === "Lugar de nacimiento (Ciudad)") {
+    if (city === "Lugar de nacimiento (País)") {
       setIsInvalidCity(true);
     } else {
       increamentStep();
@@ -42,7 +42,9 @@ export const StepThreeComponent = () => {
         </div>
         {isInputOpen && <ListContryComponent />}
       </form>
-      {isInvalidCity && <h2 className="error-city">Please insert your city</h2>}
+      {isInvalidCity && (
+        <h2 className="error-city">Por favor inserte su ciudad</h2>
+      )}
       <ButtonSubmitComponent onClick={verifyCity} />
     </StepThreeStyled>
   );
