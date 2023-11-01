@@ -1,11 +1,11 @@
+import { useContext } from "react";
 import { HomePage } from "./pages/homepage";
+import { AppContext } from "./context/appContext";
+import { ResultPage } from "./pages/resultPage";
 
 function App() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  const { currentStep } = useContext(AppContext);
+  return <>{currentStep < 8 ? <HomePage /> : <ResultPage />}</>;
 }
 
 export default App;
