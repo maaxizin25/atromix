@@ -35,4 +35,6 @@ export interface iAppContext {
   setIsInputNameValid: (e: boolean) => void;
   handleChangeLoading: () => void;
   loading: boolean;
+  isInputInformCityOpen: boolean;
+  handleChangeSetIsInputInformCity: () => void;
 }
