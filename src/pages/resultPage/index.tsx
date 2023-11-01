@@ -1,4 +1,5 @@
 import logo from "../../assets/ASTRODESTINO.png";
+import { ReviewsComponent } from "../../components/reviews";
 import { SectionEightResultComponent } from "../../components/sectionEightResult";
 import { SectionFiveResultComponent } from "../../components/sectionFiveResult";
 import { SectionFourResultComponent } from "../../components/sectionFourResult";
@@ -26,6 +27,7 @@ export const ResultPage = () => {
         <SectionSevenResultComponent />
         <SectionEightResultComponent />
         <SectionNineResultComponent />
+        <ReviewsComponent />
       </div>
     </ResultPageStyle>
   );
