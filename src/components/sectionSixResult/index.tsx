@@ -22,10 +22,10 @@ export const SectionSixResultComponent = () => {
             conception. It is best to even out the deficit with natural foods
             and not synthetic additives);
           </p>
-          <p>
+          <span>
             <b>2. Active sex life</b>
             <p> (no less than 2-3 times per week) </p>
-          </p>
+          </span>
           <p className="ocult-element">3. Unhealth Unhealthy</p>
           <p className="ocult-element">
             {" "}

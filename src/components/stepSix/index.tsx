@@ -14,12 +14,14 @@ export const StepSixComponent = () => {
     city,
     selectedGender,
     increamentStep,
+    handleChangeLoading,
   } = useContext(AppContext);
   const [emailUser, setEmailUser] = useState("");
   const [isSelect, setIsSelect] = useState<boolean | null>(null);
 
   const postInActive = async () => {
     try {
+      handleChangeLoading();
       await apiActive.post("active-send-form", {
         contact: {
           email: emailUser,
@@ -50,6 +52,8 @@ export const StepSixComponent = () => {
       });
     } catch (error) {
       console.log(error);
+    } finally {
+      handleChangeLoading();
     }
   };
 
