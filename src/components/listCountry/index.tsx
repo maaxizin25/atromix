@@ -19,6 +19,7 @@ import estadosUnidos from "../../assets/estadosUnidos.svg";
 import peru from "../../assets/peru.svg";
 import colombia from "../../assets/colombia.svg";
 import espanha from "../../assets/espanha.svg";
+import world from "../../assets/world.svg";
 import { ListContryStyle } from "./style";
 import { useContext } from "react";
 import { AppContext } from "../../context/appContext";
@@ -47,6 +48,7 @@ export const ListContryComponent = () => {
     { pais: "Perú", img: peru },
     { pais: "Colombia", img: colombia },
     { pais: "España", img: espanha },
+    { pais: "Selecciona otro país", img: world },
   ];
 
   return (

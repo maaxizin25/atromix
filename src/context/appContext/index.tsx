@@ -30,6 +30,7 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     img: capricornio,
   });
   const [city, setCity] = useState("Lugar de nacimiento (País)");
+  const [isInputInformCityOpen, setIsInputInformCity] = useState(false);
   const [isInputOpen, setInputOpen] = useState<boolean>(false);
   const [hourDateBirth, setHourDateBirth] = useState("");
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
@@ -144,7 +145,16 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     increamentStep();
   };
 
+  const handleChangeSetIsInputInformCity = (boolean: boolean) => {
+    setIsInputInformCity(boolean);
+    setCity("Lugar de nacimiento (País)");
+  };
+
   const insertCity = (e: string) => {
+    if (e == "Selecciona otro país") {
+      handleChangeSetIsInputInformCity(true);
+      setCity("");
+    }
     setCity(e);
     setInputOpen(false);
   };
@@ -188,6 +198,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         setIsInputNameValid,
         handleChangeLoading,
         loading,
+        isInputInformCityOpen,
+        handleChangeSetIsInputInformCity,
       }}
     >
       {children}
