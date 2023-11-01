@@ -145,8 +145,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     increamentStep();
   };
 
-  const handleChangeSetIsInputInformCity = (boolean: boolean) => {
-    setIsInputInformCity(boolean);
+  const handleChangeSetIsInputInformCity = (value: boolean) => {
+    setIsInputInformCity(value);
     setCity("Lugar de nacimiento (País)");
   };
 
