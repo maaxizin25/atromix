@@ -11,5 +11,5 @@ export const ButtonCheckoutStyle = styled.a`
   border-radius: 32px;
   color: white;
   background: linear-gradient(270deg, #db52ca 0%, #ff8340 100%);
-  height: 50px;
+  padding: 20px;
 `;

@@ -1,9 +1,9 @@
 import { ButtonCheckoutStyle } from "./style";
 
-export const ButtonCheckoutComponent = () => {
+export const ButtonCheckoutComponent = ({ text }: { text: string }) => {
   return (
     <ButtonCheckoutStyle href="https://go.hotmart.com/Y88065931K?ap=4976">
-      Abrir horóscopo completo por 28 USD
+      {text ? text : "      Abrir horóscopo completo por 28 USD"}
     </ButtonCheckoutStyle>
   );
 };

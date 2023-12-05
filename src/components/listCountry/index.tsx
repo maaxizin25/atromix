@@ -1,9 +1,9 @@
 import mexico from "../../assets/mexico.svg";
 import chile from "../../assets/chile.svg";
 import portugal from "../../assets/portugal.svg";
-import canadá from "../../assets/canadá.svg";
+import canada from "../../assets/canada.svg";
 import reinoUnido from "../../assets/reino unido.svg";
-import suiça from "../../assets/suiça.svg";
+import suica from "../../assets/suica.svg";
 import italia from "../../assets/italia.png";
 import paraguai from "../../assets/paraguai.svg";
 import bolivia from "../../assets/bolivia.svg";
@@ -30,9 +30,9 @@ export const ListContryComponent = () => {
     { pais: "México", img: mexico },
     { pais: "Chile", img: chile },
     { pais: "Portugal", img: portugal },
-    { pais: "Canadá", img: canadá },
+    { pais: "Canadá", img: canada },
     { pais: "Reino Unido", img: reinoUnido },
-    { pais: "Suiza", img: suiça },
+    { pais: "Suiza", img: suica },
     { pais: "Italia", img: italia },
     { pais: "Paraguay", img: paraguai },
     { pais: "Bolivia", img: bolivia },

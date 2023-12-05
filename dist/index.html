@@ -2,7 +2,7 @@
 <html lang="es-ES">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/world-7cc3d55f.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
     <style>
@@ -13,7 +13,7 @@
         font-style: normal;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-5761fdd5.js"></script>
+    <script type="module" crossorigin src="/assets/index-3292a4bc.js"></script>
   </head>
   <body>
     <div id="root"></div>
@@ -43,6 +43,42 @@
       vgo("setTrackByDefault", true);
 
       vgo("process");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1772GGB52N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1772GGB52N");
+    </script>
+    <script>
+            let prefix = ["https://go.hotmart.com", "https://pay.octuspay.com"];
+            function getParams() {
+                let t = "",
+                    e = window.top.location.href,
+                    r = new URL(e);
+                if (null != r) {
+                    let a = r.searchParams.get("utm_source"),
+                        n = r.searchParams.get("utm_medium"),
+                        o = r.searchParams.get("utm_campaign"),
+                        m = r.searchParams.get("utm_term"),
+                        c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = &sck=${a}|${n}|${o}|${m}|${c}), console.log(t)
+                }
+                return t
+            } ! function () {
+                var t = new URLSearchParams(window.location.search);
+                t.toString() && document.querySelectorAll("a").forEach(function (e) {
+                    for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+                })
+            }();
+          
     </script>
   </body>
 </html>
