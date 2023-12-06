@@ -11,30 +11,32 @@ export const ResultNewSection = () => {
     >
       <div>
         <h2>
-          {nameUser}, Archangel {angel?.nome} Holds The Keys To Your Greater
-          Destiny…
+          {nameUser}, el Arcángel {angel?.nome} HTiene las Llaves de tu Destino
+          Mayor…
         </h2>
-        <p>This Personalized Guardian Angel Report Has Been Prepared For:</p>
+        <p>
+          Este Informe Personalizado del Ángel Guardián ha sido Preparado para:
+        </p>
         <table>
           <tbody>
             <tr>
-              <th>Name</th>
+              <th>Nombre</th>
               <td>{nameUser}</td>
             </tr>
             <tr>
-              <th>Guardian Angel</th>
-              <td>Raziel</td>
+              <th>Ángel Guardián</th>
+              <td>{angel?.nome}</td>
             </tr>
           </tbody>
         </table>
         <div className="container-steps">
           <div>
-            <p>Step 1</p>
-            <p>Discover your guardian Angel</p>
+            <p>Paso 1</p>
+            <p>Descubre a tu Ángel Guardián</p>
           </div>
           <div>
-            <p>Step 2</p>
-            <p>Connect With your Guardian Angel</p>
+            <p>Paso 2</p>
+            <p>Conecta con tu Ángel Guardián</p>
           </div>
         </div>
       </div>
