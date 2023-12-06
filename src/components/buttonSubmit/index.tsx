@@ -15,7 +15,7 @@ export const ButtonSubmitComponent = ({
       ) : currentStep <= 5 ? (
         "Próximo"
       ) : (
-        "Horóscopo Abierto"
+        "Revela mi ángel"
       )}
     </ButtonSubmitStyled>
   );
