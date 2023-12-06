@@ -77,7 +77,7 @@ export const StepCalculateHoroscope = () => {
   return (
     <StepCalculateHoroscopeStyle>
       <span>
-        <h2>Estamos redactando su horóscopo</h2>
+        <h2>Estamos redactando su angel</h2>
       </span>
       <div className="container">
         <div className="container-planet">
@@ -118,7 +118,7 @@ export const StepCalculateHoroscope = () => {
         ) : (
           <div className="check-finish">
             <img src={checkFinish} alt="" />
-            <h2>El demo del Horóscopo está listo</h2>
+            <h2>El demo del angel está listo</h2>
           </div>
         )}
       </div>
@@ -127,7 +127,7 @@ export const StepCalculateHoroscope = () => {
         <div className="progress-bar" style={{ width: `${progress}%` }}></div>
       </div>
       <p className="final-message">
-        Por favor, espere un poco. Pronto compondremos su horóscopo.
+        Por favor, espere un poco. Pronto compondremos su angel.
       </p>
     </StepCalculateHoroscopeStyle>
   );

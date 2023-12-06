@@ -77,14 +77,12 @@ export const StepSixComponent = () => {
       <div>
         <h2>
           Necesitamos tu dirección de correo electrónico para enviarte lecturas
-          de horóscopos.
+          de ángeles.
         </h2>
         <img src={giftImg} alt="" />
         <p>
           También te enviaremos cartas.{" "}
-          <b>
-            con recomendaciones personales del astrólogo principal de Astromix.
-          </b>
+          <b>con recomendaciones personales del ángel principal.</b>
         </p>
       </div>
 
