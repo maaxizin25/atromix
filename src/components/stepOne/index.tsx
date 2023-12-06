@@ -5,7 +5,8 @@ import { StepOneStyled } from "./style";
 import { AppContext } from "../../context/appContext";
 
 export const StepOneComponent = () => {
-  const { saveDateBirth, submitEvent, dateBirth } = useContext(AppContext);
+  const { saveDateBirth, submitEvent, dateBirth, getAngel } =
+    useContext(AppContext);
 
   const optionsDays = [];
   const optionsYears = [];
@@ -67,7 +68,9 @@ export const StepOneComponent = () => {
           {optionsYears}
         </select>
       </div>
-      <ButtonSubmitComponent />
+      <ButtonSubmitComponent
+        onClick={() => getAngel(Number(dateBirth.month))}
+      />
     </StepOneStyled>
   );
 };

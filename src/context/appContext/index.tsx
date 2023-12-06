@@ -2,16 +2,36 @@ import React, { FormEvent, createContext, useState } from "react";
 import { iAppContext, iAppContextProps } from "./types";
 import acuario from "../../assets/acuario.svg";
 import aries from "../../assets/aries.svg";
-import cáncer from "../../assets/cáncer.svg";
+import cancer from "../../assets/cancer.svg";
 import capricornio from "../../assets/capricornio.svg";
 import escorpio from "../../assets/escorpio.svg";
-import géminis from "../../assets/géminis.svg";
+import geminis from "../../assets/geminis.svg";
 import leo from "../../assets/leo.svg";
 import libra from "../../assets/libra.svg";
 import piscis from "../../assets/piscis.svg";
 import sagitario from "../../assets/sagitario.svg";
 import tauro from "../../assets/tauro.svg";
 import virgo from "../../assets/virgo.svg";
+import { angels } from "../../mock/angel";
+
+export interface tAngels {
+  nome: string;
+  month: number;
+  firstText: string;
+  secondText: string;
+  angelImg: string;
+  threeText: string;
+  fourText: string;
+  fiveText: string;
+  sixText: string;
+  sevenText: string;
+  eightText: string;
+  nineText: string;
+  teenText: string;
+  elevenText: string;
+  twoEvenText: string;
+  threeEventText: string;
+}
 
 export const AppContext = createContext({} as iAppContext);
 
@@ -36,11 +56,13 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
   const [nameUser, setNameUser] = useState<string>("");
   const [isInputNameValid, setIsInputNameValid] = useState<boolean>(true);
+  const [angel, setAngel] = useState<tAngels | null>(null);
   const increamentStep = () => {
-    if (currentStep < 8) {
+    if (currentStep < 9) {
       setCurrentStep(currentStep + 1);
     }
   };
+
   const handleChangeLoading = () => {
     setIsLoading(!loading);
   };
@@ -60,16 +82,23 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     const day = parseInt(dateBirth.day);
     const month = parseInt(dateBirth.month);
 
-    if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+    if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
       setSigno({
-        signo: "acuario",
+        signo: "Capricornio",
+        message:
+          "Los capricornianos suelen ser ambiciosos y se guían únicamente por la mente. Son reservados, fríos e irremediablemente ordenados, por lo que siempre controlan la situación y actúan con criterio, apoyándose en el sentido común. Al mismo tiempo, a los Capricornio les resulta difícil comprender sus propias emociones y las de los demás, lo que puede provocar malentendidos y discrepancias.",
+        img: capricornio,
+      });
+    } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+      setSigno({
+        signo: "Acuario",
         message:
           "A los acuarianos les encanta experimentar, destacar y sorprender. No tienen miedo a lo desconocido. Los acuarianos tienden a seguir sus ideas con fanatismo, pero su incapacidad para comunicarlas claramente a los demás a menudo provoca resistencia por parte de las personas cercanas a ellos, así como de la sociedad en general.",
         img: acuario,
       });
     } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
       setSigno({
-        signo: "piscis",
+        signo: "Piscis",
         message:
           "Los Piscis son algo soñadores y tienden a vivir en su propio mundo. Estos son verdaderos idealistas cuyas cabezas están constantemente llenas de ideas que afirman la vida. Están dotados de una fuerte intuición y una excelente memoria. Pero Piscis tiende a consumirse y caer en el desaliento, por no decir depresión, sin el amor y el cuidado adecuados.",
         img: piscis,
@@ -93,14 +122,14 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         signo: "Géminis",
         message:
           "Los Géminis son creadores incontenibles cuyas cabezas están llenas de ideas creativas y planes poco realistas. Tienen un intelecto bien desarrollado, pero al mismo tiempo no pueden quedarse quietos ni un minuto. Su opinión puede cambiar varias veces al día, ya que los demás influyen fácilmente en Géminis.",
-        img: géminis,
+        img: geminis,
       });
     } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
       setSigno({
         signo: "Cáncer",
         message:
           "Los cánceres son bastante emocionales y tienen mundos internos complejos. A veces parecen firmes como una roca, pero en realidad son vulnerables y compasivos. Perciben agudamente cualquier injusticia y son sensibles a las críticas. Sin embargo, los Cáncer tienen una intuición bien desarrollada y pueden leer las emociones de otras personas, lo que los convierte en psicólogos talentosos.",
-        img: cáncer,
+        img: cancer,
       });
     } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
       setSigno({
@@ -138,6 +167,13 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         img: sagitario,
       });
     }
+  };
+  const getAngel = (month: number) => {
+    angels.forEach((angel: tAngels) => {
+      if (angel.month === month) {
+        setAngel(angel);
+      }
+    });
   };
   const submitEvent = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -201,6 +237,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
         loading,
         isInputInformCityOpen,
         handleChangeSetIsInputInformCity,
+        angel,
+        getAngel,
       }}
     >
       {children}

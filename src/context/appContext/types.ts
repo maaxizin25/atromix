@@ -1,4 +1,5 @@
 import React, { FormEvent } from "react";
+import { tAngels } from ".";
 
 export interface iAppContextProps {
   children: React.ReactNode;
@@ -37,4 +38,6 @@ export interface iAppContext {
   loading: boolean;
   isInputInformCityOpen: boolean;
   handleChangeSetIsInputInformCity: (e: boolean) => void;
+  angel: tAngels | null;
+  getAngel: (month: number) => void;
 }
