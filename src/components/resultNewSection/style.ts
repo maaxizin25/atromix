@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import img from "../../assets/backgroundImgContainerResult.webp";
 
-export const ResultNewSectionStyle = styled.div`
+interface step {
+  $step: number;
+}
+
+export const ResultNewSectionStyle = styled.div<step>`
   background: url(${img});
   background-position: center;
   background-repeat: initial;
@@ -42,12 +46,13 @@ export const ResultNewSectionStyle = styled.div`
       height: 85px;
     }
     div:nth-child(1) {
-      background-color: #bc3893;
+      background-color: ${(props) => props.$step === 8 && "#bc3893"};
       border: 1px solid white;
-      box-shadow: 10px white;
+      box-shadow: 10px;
     }
     div:nth-child(2) {
       border: 1px solid white;
+      background-color: ${(props) => props.$step === 9 && "#bc3893"};
     }
   }
   @media (min-width: 600px) {

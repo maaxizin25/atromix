@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { ButtonCheckoutStyle } from "./style";
+import { AppContext } from "../../context/appContext";
 
-export const ButtonCheckoutComponent = ({ text }: { text: string }) => {
+export const ButtonCheckoutComponent = ({ text }: { text?: string }) => {
+  const { increamentStep } = useContext(AppContext);
+
   return (
-    <ButtonCheckoutStyle href="https://go.hotmart.com/Y88065931K?ap=4976">
+    <ButtonCheckoutStyle onClick={() => increamentStep()}>
       {text ? text : "      Abrir horóscopo completo por 28 USD"}
     </ButtonCheckoutStyle>
   );

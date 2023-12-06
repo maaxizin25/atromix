@@ -58,7 +58,7 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [isInputNameValid, setIsInputNameValid] = useState<boolean>(true);
   const [angel, setAngel] = useState<tAngels | null>(null);
   const increamentStep = () => {
-    if (currentStep < 8) {
+    if (currentStep < 9) {
       setCurrentStep(currentStep + 1);
     }
   };
