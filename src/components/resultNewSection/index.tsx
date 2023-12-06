@@ -3,9 +3,12 @@ import { AppContext } from "../../context/appContext";
 import { ResultNewSectionStyle } from "./style";
 
 export const ResultNewSection = () => {
-  const { nameUser, angel } = useContext(AppContext);
+  const { nameUser, angel, currentStep } = useContext(AppContext);
   return (
-    <ResultNewSectionStyle className="container-introduction-result">
+    <ResultNewSectionStyle
+      $step={currentStep}
+      className="container-introduction-result"
+    >
       <div>
         <h2>
           {nameUser}, Archangel {angel?.nome} Holds The Keys To Your Greater
