@@ -11,7 +11,7 @@ export const ResultNewSection = () => {
     >
       <div>
         <h2>
-          {nameUser}, el Arcángel {angel?.nome} HTiene las Llaves de tu Destino
+          {nameUser}, el Arcángel {angel?.nome} Tiene las Llaves de tu Destino
           Mayor…
         </h2>
         <p>
