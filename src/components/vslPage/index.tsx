@@ -8,10 +8,12 @@ export const VslPageComponent = () => {
   return (
     <VslPageStyle>
       <h2>
-        Dear {nameUser}, You're About to Uncover{" "}
-        <span>The Ultimate Secret To Connect With Archangel Jeremiel...</span>
+        Querido/a {nameUser}, Estás a punto de descubrir{" "}
+        <span>
+          el secreto definitivo para conectar con el Arcángel Jeremiel...
+        </span>
       </h2>
-      <p>(Starting in The Next 24 Hours...)</p>
+      <p>(Comenzando en las próximas 24 horas...)</p>
       <div className="video-vsl">
         <iframe
           frameBorder={0}

@@ -7,6 +7,7 @@ export const ButtonCheckoutStyle = styled.a`
   text-decoration: none;
   text-align: center;
   font-weight: 600;
+  cursor: pointer;
   width: 100%;
   border-radius: 32px;
   color: white;
