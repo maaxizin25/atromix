@@ -16,6 +16,7 @@ export const VslPageStyle = styled.div`
   .video-vsl {
     padding: 150% 0 0 0;
     position: relative;
+    height: 100vh;
   }
   iframe {
     position: absolute;
