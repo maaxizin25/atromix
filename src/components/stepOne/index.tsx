@@ -28,8 +28,15 @@ export const StepOneComponent = () => {
 
   return (
     <StepOneStyled action="" onSubmit={submitEvent}>
-      <h2>Por favor, introduce tu fecha de nacimiento</h2>
-      <p>Nos ayudará a saber tu signo solar.</p>
+      <h2 className="padding-fix">
+        El día que naciste NO fue un accidente. Se le asignó un ángel de la
+        guarda Cuidarte…
+      </h2>
+      <p className="padding-fix">
+        Ingrese sus datos a continuación para descubrir el nombre de su ángel de
+        la guarda y el Mensaje especial que te espera...
+      </p>
+      <p>Nos ayudará a saber tu Ángel de la guarda.</p>
       <img className="telescope-img" src={telescopeImg} alt="" />
       <div className="select-your-data">
         <select

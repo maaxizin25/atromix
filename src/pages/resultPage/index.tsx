@@ -48,7 +48,7 @@ export const ResultPage = () => {
           <h2 className="border-text center">{myAngel.twoEvenText}</h2>
           <p dangerouslySetInnerHTML={{ __html: myAngel.threeEventText }} />
           <ButtonCheckoutComponent
-            text={`Click Here To Discover How To Connect With Archangel ${myAngel.nome}`}
+            text={`Haga clic aquí para descubrir cómo conectarse con Arcángel ${myAngel.nome}`}
           />
         </div>
       )}

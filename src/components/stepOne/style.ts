@@ -15,6 +15,9 @@ export const StepOneStyled = styled.form`
   p {
     font-size: 14px;
   }
+  .padding-fix {
+    padding: 0px 20px;
+  }
   .telescope-img {
     width: 151px;
     margin-bottom: 20px;
