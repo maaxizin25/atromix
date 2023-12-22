@@ -57,10 +57,16 @@ export const AppProvider = ({ children }: iAppContextProps) => {
   const [nameUser, setNameUser] = useState<string>("");
   const [isInputNameValid, setIsInputNameValid] = useState<boolean>(true);
   const [angel, setAngel] = useState<tAngels | null>(null);
+
   const increamentStep = () => {
     if (currentStep < 9) {
-      setCurrentStep(currentStep + 1);
+      if (currentStep == 1) {
+        setCurrentStep(3);
+      } else {
+        setCurrentStep(currentStep + 1);
+      }
     }
+    console.log(currentStep);
   };
 
   const handleChangeLoading = () => {

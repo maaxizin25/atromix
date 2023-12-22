@@ -13,6 +13,7 @@ export const StepFourStyle = styled.div`
     align-items: center;
     justify-content: center;
     gap: 20px;
+    text-align: center;
     p {
       padding: 0 30px;
     }
