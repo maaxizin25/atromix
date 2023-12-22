@@ -10,7 +10,10 @@ export const ButtonCheckoutStyle = styled.a`
   cursor: pointer;
   width: 100%;
   border-radius: 32px;
-  color: white;
-  background: linear-gradient(270deg, #db52ca 0%, #ff8340 100%);
+  margin-top: 10px;
+  font-size: 22px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  color: black;
+  background: #feb100;
   padding: 20px;
 `;

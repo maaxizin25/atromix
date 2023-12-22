@@ -36,7 +36,7 @@ export const StepFiveComponent = () => {
     <StepFiveStyle>
       <div>
         <h2>Elige tus géneros y escribe tus nombres.</h2>
-        <p>Nos ayuda a personalizar tu horóscopo.</p>
+        <p>Ayúdanos a encontrar tu ángel de la guarda</p>
       </div>
       <div className="container-select-gender">
         <label className="select-your-gender">
