@@ -62,6 +62,8 @@ export const AppProvider = ({ children }: iAppContextProps) => {
     if (currentStep < 9) {
       if (currentStep == 1) {
         setCurrentStep(3);
+      } else if (currentStep == 7) {
+        setCurrentStep(9);
       } else {
         setCurrentStep(currentStep + 1);
       }
