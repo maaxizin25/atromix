@@ -17,7 +17,6 @@ export const StepSixComponent = () => {
     handleChangeLoading,
   } = useContext(AppContext);
   const [emailUser, setEmailUser] = useState("");
-  const [isSelect, setIsSelect] = useState<boolean | null>(null);
 
   const postInActive = async () => {
     try {
@@ -59,18 +58,11 @@ export const StepSixComponent = () => {
 
   const onSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (isSelect) {
-      await postInActive();
-      increamentStep();
-    } else {
-      setIsSelect(false);
-    }
+    await postInActive();
+    increamentStep();
   };
   const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     setEmailUser(e.target.value);
-  };
-  const handleChangeChecked = (e: ChangeEvent<HTMLInputElement>) => {
-    setIsSelect(e.target.checked);
   };
   return (
     <StepSixStyle>
@@ -98,13 +90,6 @@ export const StepSixComponent = () => {
         <p className="description-input">
           Recibirás consejos basados en tu información personal.
         </p>
-        <label>
-          <input onChange={handleChangeChecked} type="checkbox" />
-          <p>Acepto el Acuerdo de Usuario, Política de Privacidad</p>
-        </label>
-        {isSelect === false && (
-          <h2 className="invalid-accept">Por favor acpte el acuerdo</h2>
-        )}
         <div>
           <p className="footer-data">
             Todos tus datos personales están protegidos
