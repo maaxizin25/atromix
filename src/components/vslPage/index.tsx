@@ -18,8 +18,8 @@ export const VslPageComponent = () => {
         <iframe
           frameBorder={0}
           allowFullScreen={true}
-          src="https://scripts.converteai.net/d331dfa7-f65a-427e-934f-2c0eb96fde35/players/656cd6d71413370009d9f3ee/embed.html"
-          id="ifr_656cd6d71413370009d9f3ee"
+          src="https://scripts.converteai.net/d331dfa7-f65a-427e-934f-2c0eb96fde35/players/65bc4a766b27fc0008c4bb1f/embed.html"
+          id="ifr_65bc4a766b27fc0008c4bb1f"
           referrerPolicy="origin"
         ></iframe>
       </div>
