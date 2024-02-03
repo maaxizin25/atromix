@@ -13,7 +13,6 @@ export const VslPageComponent = () => {
           el secreto definitivo para conectar con el Arcángel Jeremiel...
         </span>
       </h2>
-      <p>(Comenzando en las próximas 24 horas...)</p>
       <div className="video-vsl">
         <iframe
           frameBorder={0}
